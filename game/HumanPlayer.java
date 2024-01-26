@@ -1,6 +1,10 @@
 package game;
 
 public class HumanPlayer extends Player {
+    public HumanPlayer(String s) {
+        super(s);
+    }
+
     public int takePins(Board board) {
         int n = UserInterface.askForInt("Select how many pins to take. 1 or 2.");
 

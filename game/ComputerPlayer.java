@@ -3,6 +3,10 @@ package game;
 import java.util.Random;
 
 public class ComputerPlayer extends Player {
+    public ComputerPlayer(String s) {
+        super(s);
+    }
+
     public int takePins(Board board) {
         int n;
         if (board.getNoPins() == 1) {
